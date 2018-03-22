@@ -1,0 +1,59 @@
+body, html, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0; }
+
+body {
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  width: 90%;
+  height: 10%;
+  margin: 1rem auto; }
+  .header i {
+    z-index: 5;
+    float: right;
+    display: block;
+    font-size: 1.5rem; }
+
+.content {
+  width: 100%;
+  height: 83%;
+  margin-top: 1rem;
+  overflow: auto;
+  position: relative; }
+  .content div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem; }
+    .content div label {
+      width: 20%;
+      text-align: right; }
+    .content div textarea {
+      height: 6rem;
+      width: 70%; }
+    .content div input {
+      width: 70%; }
+  .content button {
+    position: absolute;
+    width: 16rem;
+    height: 2rem;
+    left: 50%;
+    bottom: 1rem;
+    margin-left: -8rem;
+    outline: none;
+    border: none;
+    background: #DC143C;
+    color: white; }
+
+/*# sourceMappingURL=Press.css.map */

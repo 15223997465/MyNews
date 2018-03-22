@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,width=device-width, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/iconfont-login.min.css" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../css/My.css" />
+	</head>
+
+	<body>
+		<div id="header" class="header">
+			<i class="iconfont icon-back" id="back"></i>
+			<i class="iconfont icon-close" id="close"></i>
+		</div>
+		
+		<div id="content" class="content">
+			<h3>个人中心</h3>
+			<p>账号：<i id="showUsername"></i></p>
+			<div id="content_btns" class="content_btns">
+				<button id="myCollection"><em>我的收藏</em><i>></i></button>
+			
+				<button id="myInfo"><em>我的信息</em><i>></i></button>
+				
+				<button id="signOut"><em>退出登录</em><i>></i></button>
+			</div>
+		</div>
+		<div id="content_info" class="content_info"></div>
+	</body>
+	<script src="../js/sea.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript" src="../js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="../js/My.js" ></script>
+	<script>
+		seajs.use("My",function(){
+				
+		})
+
+	</script>
+</html>

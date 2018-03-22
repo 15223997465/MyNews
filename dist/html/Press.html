@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,width=device-width, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/iconfont-login.min.css" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../css/Press.css" />
+	</head>
+
+	<body>
+		<div id="header" class="header">
+			<i class="iconfont icon-close" id="close"></i>
+		</div>
+		<div id="content" class="content">
+			<div><label>标题：</label><input type="text"/></div>
+			<div><label>内容：</label><textarea></textarea></div>
+			<div>
+				<label>类别：</label>
+				<select>
+					<option>趣事</option>
+					<option>社会</option>
+					<option>国内</option>
+					<option>国际</option>
+					<option>独家</option>
+					<option>军事</option>
+					<option>财经</option>
+					<option>科技</option>
+					<option>体育</option>
+					<option>娱乐</option>
+					<option>时尚</option>
+					<option>汽车</option>
+					<option>房产</option>
+					<option>健康</option>
+				</select>
+			</div>
+			<div><label>图片：</label><input type="file"/></div>
+			<button>发布</button>
+		</div>
+	</body>
+	<script src="../js/sea.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript" src="../js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="../js/Press.js" ></script>
+	<script>
+		seajs.use("Press",function(){
+				
+		})
+
+	</script>
+</html>

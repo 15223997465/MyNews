@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,width=device-width, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/iconfont.min.css" />
+		<link rel="stylesheet" href="../css/News.css" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+	</head>
+
+	<body>
+		<div id="main" class="main">
+			<div id="map" class="map"></div>
+			<div id="main-header" class="main-header">
+				<a id="search" class="search"><i class="iconfont icon-sousuo-copy"></i>
+					<b id="sbtn" class="sbtn">探索你的世界</b>
+					<div id="inputBox" class="inputBox"><input type="text" id="input" class="input" placeholder="探索你的世界"/><button>搜索</button></div>
+					<div id="wordInfo" class="wordInfo"></div>
+				</a>
+				
+			</div>
+			<div id="main-content" class="main-content">
+				<div id="content-header" class="content-header">
+					<span id="userNews" class="userNews">新鲜事</span>
+					<span id="kinds" class="kinds">
+					<span>要闻</span>
+					<span>社会</span>
+					<span>国内</span>
+					<span>国际</span>
+					<span>独家</span>
+					<span>军事</span>
+					<span>财经</span>
+					<span>科技</span>
+					<span>体育</span>
+					<span>娱乐</span>
+					<span>时尚</span>
+					<span>汽车</span>
+					<span>房产</span>
+					<span>健康</span>
+					</span>
+
+				</div>
+
+				<ul id="content-info" class="info"></ul>
+			</div>
+			<div id="main-footer" class="main-footer">
+				<a id="login" class="login"><i class="iconfont icon-people"></i>
+					<i>登录</i>
+				</a>
+				<a id="index" class="index"><i class="iconfont icon-home"></i>
+					<i>首页</i>
+				</a>
+				<a id="press" class="press"><i class="iconfont icon-location"></i>
+					<i>发布</i>
+				</a>
+			</div>
+		</div>
+	</body>
+	<script src="../js/sea.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript" src="../js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="../js/News.js" ></script>
+	<script>
+		
+		$(document).ready(function(){
+			seajs.use("News",function(){
+				
+			})
+		})
+		
+		function data_callback(data){
+			showData(data);	
+		}
+		function word_callback(data)
+		{
+			showWord(data)
+		}
+	</script>
+</html>

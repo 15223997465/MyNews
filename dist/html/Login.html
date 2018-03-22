@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0,width=device-width, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/iconfont-login.min.css" />
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="../css/Login.css" />
+	</head>
+
+	<body>
+		<div id="header" class="header">
+			<i class="iconfont icon-close" id="close"></i>
+		</div>
+		<div id="content" class="content">
+			<div id="phoneNum" class="phoneNum">
+				<input type="tel" id="tel" class="tel" placeholder="手机号" value=""/>
+			</div>
+			<div id="password" class="password">
+				<input type="password" id="pwd" class="pwd" placeholder="密码" value=""/>
+			</div>
+			<div id="login_btn" class="login_btn">
+				<button class="bt" id="lb">登录</button>
+				<button class="bt" id="rb">注册</button>
+				<button class="fg" id="fg">忘记密码</button>
+			</div>
+		</div>
+	</body>
+	<script src="../js/sea.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	<script type="text/javascript" src="../js/jquery.mobile.custom.js" ></script>
+	<script type="text/javascript" src="../js/Login.js" ></script>
+	<script>
+		seajs.use("Login",function(){
+				
+		})
+
+	</script>
+</html>
